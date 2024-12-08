@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+
+h1, h2 {
+    font-size:  2rem; 
+}
+#inicio {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: 1.5rem auto;
+    background-color: rgb(206, 236, 227);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+}
+#bienvenida p{
+    text-align: center;
+}
+#inicio h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    padding: 10pxx;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li {
+    margin: 0 1rem;
+}
+
+.menu a:hover {
+    background-color: #edadad; 
+    color: white;
+    transform: scale(1.1); 
+}
+
+
+#sobre-mi {
+    display: flex;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+#sobre-mi h2 {
+   
+    color: #333;
+    margin-bottom: 0.5rem;
+    
+}
+
+.sobre-mi{
+    display: flex;
+    align-items: center; 
+    flex-flow: row wrap;
+}
+
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 70px; 
+}
+
+.perfil img {
+    
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 30%; 
+   
+}
+
+.perfil p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#sobre-mi p {
+    max-width: fit-content;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+#habilidades {
+    background-color: white;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-top:1rem;
+   
+}
+
+#habilidades h2 {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+   align-content: center;
+}
+
+.habilidades-contenedor {
+    display: flex;
+    align-items: center; 
+    gap: 70px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+
+.habilidades-contenedor img {
+    max-width: 370px;
+    height: auto; 
+    border-radius: 30%; 
+}
+
+.habilidades-contenedor ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 700px; 
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.habilidades-contenedor ul li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+
+
+
+#galeria {
+    padding: 2rem 3rem;
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#galeria h2 {
+    color: #333;
+   
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border: 5px solid #ddd;
+}
+
+td img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+#contacto {
+    background-color: #f8f8f8;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+button {
+    padding: 0.8rem 2rem;
+    background-color: #f1abab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #inicio {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    #inicio h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .menu ul li {
+        margin: 0.5rem 0;
+    }
+
+    #sobre-mi, #habilidades, #galeria, #contacto {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"], input[type="email"], textarea, button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    #inicio {
+        flex-direction: row;
+    }
+
+    .menu ul {
+        flex-direction: row;
+    }
+}
